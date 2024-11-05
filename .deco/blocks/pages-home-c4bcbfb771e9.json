@@ -11,40 +11,41 @@
       "__resolveType": "site/sections/Images/Carousel.tsx",
       "images": [
         {
-          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/5b022a01-ba88-46fe-86ae-93ae644605b7",
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/88b2ad41-be6d-4640-b9fe-c58942362f0f",
-          "alt": "Shoes",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/yareconcept/8f9a45f7-a680-4205-92d8-0e9cd2dde032/rodape.jpg",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/yareconcept/8f9a45f7-a680-4205-92d8-0e9cd2dde032/rodape.jpg",
+          "alt": "Dress",
           "action": {
-            "title": "Skate into Adventure",
-            "subTitle": "Top-quality roller skate shoes for all levels. ",
             "href": "/s?q=shoes&page=0",
-            "label": "Grab Yours Now!"
+            "label": "Descubra",
+            "title": "Nossa casa nova",
+            "subTitle": "É um prazer recebe-los em nossa casa nova!"
           }
         },
         {
-          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/d26304f4-355b-48d0-b649-e24b9cbf0ded",
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/47a4d85a-1150-4e5d-abc2-5c642445ff12",
-          "alt": "Men",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/yareconcept/96306ea2-a836-430a-b052-500fd0d70f62/LPPerfumaria.jpg",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/yareconcept/96306ea2-a836-430a-b052-500fd0d70f62/LPPerfumaria.jpg",
           "action": {
-            "title": "Discover Fresh Looks",
-            "subTitle": "Modern men's clothing and accessories.",
-            "href": "/men",
-            "label": "Shop the Collection"
-          }
-        },
-        {
-          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/1226ef79-c7e0-403c-b716-b6b9af3f2936",
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/f7ea4cbe-7498-4e64-9205-c741753edfcc",
-          "action": {
-            "label": "Shop Now!",
-            "href": "/women",
-            "title": "Embrace New Trends",
-            "subTitle": "Stylish clothes and accessories."
+            "title": "Ruiva de Sempre",
+            "subTitle": "Essa ai parece que eu conheço de outros tempos",
+            "href": "/sobre",
+            "label": "Exclusivo"
           },
-          "alt": "Woman"
+          "alt": "Redhair"
+        },
+        {
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/yareconcept/1c7617a4-400e-4bf6-9369-995595001e87/BannerDefaultList.jpg",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/yareconcept/1c7617a4-400e-4bf6-9369-995595001e87/BannerDefaultList.jpg",
+          "action": {
+            "label": "Não seja otário",
+            "href": "/women",
+            "title": "Compre pra cacete!",
+            "subTitle": "Não seja otário. Vá para os casamentos e aniversários e dê um presente!"
+          },
+          "alt": "Presentes"
         }
       ],
-      "preload": true
+      "preload": true,
+      "interval": 8
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
