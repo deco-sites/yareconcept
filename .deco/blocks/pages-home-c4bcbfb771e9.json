@@ -44,8 +44,7 @@
           "alt": "Presentes"
         }
       ],
-      "preload": true,
-      "interval": 8
+      "preload": true
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",

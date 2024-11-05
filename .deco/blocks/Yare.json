@@ -1,0 +1,34 @@
+{
+  "__resolveType": "site/sections/Theme/Theme.tsx",
+  "colorScheme": "any",
+  "buttonStyle": {
+    "--rounded-btn": "0",
+    "--btn-focus-scale": "0.95",
+    "--animation-btn": "0.1s",
+    "--border-btn": "1px"
+  },
+  "otherStyles": {
+    "--rounded-box": "1rem",
+    "--rounded-badge": "1.9rem",
+    "--animation-input": "0.2s",
+    "--tab-border": "1px",
+    "--tab-radius": "0.5rem"
+  },
+  "mode": "dark",
+  "mainColors": {
+    "base-100": "#ffd8b8",
+    "primary": "#979188",
+    "secondary": "#B2704B",
+    "error": "#B3261E",
+    "tertiary": "#FFF2D6",
+    "neutral": "#FFFFFF",
+    "warning": "#F1BDC8",
+    "info": "#796E65",
+    "success": "#216e57"
+  },
+  "complementaryColors": {
+    "base-200": "#000000",
+    "base-300": "#000000",
+    "base-400": "#000000"
+  }
+}
