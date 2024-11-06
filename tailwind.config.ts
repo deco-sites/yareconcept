@@ -7,6 +7,18 @@ export default {
   theme: {
     container: { center: true },
     extend: {
+      scrollbar: {
+        width: "8px",
+        height: "4px",
+        background: "#FFF",
+        backgroundColor: "transparent",
+        borderRadius: "0px",
+        display: "flow-root",
+      },
+      scrollbarThumb: {
+        backgroundColor: "rgba(0, 0, 0, 0.3)",
+        borderRadius: "0px",
+      },
       animation: {
         sliding: "sliding 30s linear infinite",
       },
