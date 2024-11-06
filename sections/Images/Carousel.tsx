@@ -72,7 +72,7 @@ function BannerItem(
       {...selectPromotionEvent}
       href={action?.href ?? "#"}
       aria-label={action?.label}
-      class="relative block overflow-y-hidden w-full"
+      class="relative block overflow-y-hidden w-full h-full max-h-[660px] max-w-[100dvw]"
     >
       {action && (
         <div
@@ -81,6 +81,7 @@ function BannerItem(
             "flex flex-col justify-center items-center",
             "px-5 sm:px-0",
             "sm:left-40 sm:items-start sm:max-w-96",
+            "z-10",
           )}
         >
           <span class="text-7xl font-bold text-base-100">
@@ -97,7 +98,8 @@ function BannerItem(
           </button>
         </div>
       )}
-      <Picture preload={lcp} {...viewPromotionEvent}>
+      <div class="absolute inset-0 bg-black bg-opacity-20 z-9" />
+      <Picture preload={lcp} {...viewPromotionEvent} class="w-full h-full">
         <Source
           media="(max-width: 767px)"
           fetchPriority={lcp ? "high" : "auto"}
@@ -113,7 +115,7 @@ function BannerItem(
           height={600}
         />
         <img
-          class="object-cover w-full h-full"
+          class="object-cover w-[100dvw] h-full"
           loading={lcp ? "eager" : "lazy"}
           src={desktop}
           alt={alt}
@@ -132,7 +134,7 @@ function Carousel({ images = [], preload, interval }: Props) {
       class={clx(
         "grid",
         "grid-rows-[1fr_32px_1fr_64px]",
-        "grid-cols-[32px_1fr_32px] min-h-[660px]",
+        "grid-cols-[32px_1fr_32px] max-h-[660px] max-w-[100dvw]",
         "sm:grid-cols-[112px_1fr_112px] sm:min-h-min",
         "w-screen",
       )}
@@ -140,7 +142,10 @@ function Carousel({ images = [], preload, interval }: Props) {
       <div class="col-span-full row-span-full">
         <Slider class="carousel carousel-center w-full gap-6">
           {images.map((image, index) => (
-            <Slider.Item index={index} class="carousel-item w-full">
+            <Slider.Item
+              index={index}
+              class="carousel-item w-full inset-0 bg-black bg-opacity-20"
+            >
               <BannerItem image={image} lcp={index === 0 && preload} />
             </Slider.Item>
           ))}

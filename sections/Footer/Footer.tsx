@@ -1,6 +1,5 @@
 import { type ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import PoweredByDeco from "apps/website/components/PoweredByDeco.tsx";
 import Section from "../../components/ui/Section.tsx";
 
 /** @titleBy title */
@@ -33,7 +32,6 @@ interface Props {
 function Footer({
   links = [],
   social = [],
-  policies = [],
   paymentMethods = [],
   logo,
   trademark,
@@ -95,26 +93,11 @@ function Footer({
         <hr class="w-full text-base-400" />
 
         <div class="grid grid-flow-row sm:grid-flow-col gap-8">
-          <ul class="flex flex-col sm:flex-row gap-2 sm:gap-4 sm:items-center">
-            {policies.map(({ title, href }) => (
-              <li>
-                <a class="text-xs font-medium" href={href}>
-                  {title}
-                </a>
-              </li>
-            ))}
-          </ul>
-
           <div class="flex flex-nowrap items-center justify-between sm:justify-center gap-4">
             <div>
               <img loading="lazy" src={logo} />
             </div>
             <span class="text-xs font-normal text-base-400">{trademark}</span>
-          </div>
-
-          <div class="flex flex-nowrap items-center justify-center gap-4">
-            <span class="text-sm font-normal text-base-400">Powered by</span>
-            <PoweredByDeco />
           </div>
         </div>
       </div>
